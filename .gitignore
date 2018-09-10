@@ -4,3 +4,4 @@
 *.pyc
 _pycache_/
 .env
+tic-tac-toe/

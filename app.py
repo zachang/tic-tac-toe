@@ -74,8 +74,10 @@ def start():
         abort(400, description='invalid request')
 
     outcomes = board_outcomes(request_data, 'o')
+    if len(outcomes) == 1:
+        return outcomes[0]
     return max(outcomes, key=lambda outcome: -1 * result(outcome, 'x'))
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
