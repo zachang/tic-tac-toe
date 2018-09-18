@@ -40,9 +40,9 @@ def won(data, player):
 
 def intended_win(data):
     '''Checks for possible winning moves'''
-    x_combination1 = ['x', 'x', ''];
-    x_combination2 = ['x', '', 'x'];
-    x_combination3 = ['', 'x', 'x'];
+    x_combination1 = ['x', 'x', 'o'];
+    x_combination2 = ['x', 'o', 'x'];
+    x_combination3 = ['o', 'x', 'x'];
 
     intended_wins = [
         [data[0], data[1], data[2]],
